@@ -1,0 +1,48 @@
+{
+  "name": "nychikes",
+  "version": "1.0.0",
+  "description": "NYC Hikes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisLithgow/nychikes.git"
+  },
+  "keywords": [
+    "nyc",
+    "hike",
+    "hikes",
+    "nw",
+    "york",
+    "New",
+    "York",
+    "New",
+    "York",
+    "City",
+    "new",
+    "york",
+    "city",
+    "trail",
+    "hiking"
+  ],
+  "author": "Luis Lithgow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuisLithgow/nychikes/issues"
+  },
+  "homepage": "https://github.com/LuisLithgow/nychikes#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-session": "^1.13.0",
+    "method-override": "^2.3.6",
+    "mongodb": "^2.1.18",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  }
+}
