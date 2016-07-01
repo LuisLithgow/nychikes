@@ -38,6 +38,15 @@ app.use('/hike', hikeRoute);
 
 
 
+// request
+// app.get('/api', (req,res)=> {
+//   request({url:'http.......format=json'},method:'get', (er,result)=>{
+//     if(err) throw err;
+//     console.log(result);
+//     res.send(result);
+//   })
+// })
+
 app.listen(PORT, function() {
   console.log('Server started in ' ,__dirname);
   console.log("All systems go on ", PORT);

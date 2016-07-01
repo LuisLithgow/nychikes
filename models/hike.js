@@ -17,7 +17,7 @@ module.exports = {
 
       db.collection('hiketrails')
       .find(/* */)
-      .sort(/*{"Name":-1, "Other_Details":1}*/)
+      .sort({"Park_Name":1, "Name":-1})
       .toArray(function(err, results) {
         if(err) throw err;
 
