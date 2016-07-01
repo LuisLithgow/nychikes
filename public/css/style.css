@@ -35,10 +35,11 @@ li ul li {
   text-decoration: underline;
 }
 .li-color {
-  padding: 10px;
-  background-color:yellow;
+  padding: 5px 5px;
+  background-color:#ffe;
   width: 100%
   color: #4CAF50;
+  list-style: none;
 }
 
 .ui-menu {
@@ -48,6 +49,7 @@ li ul li {
 .right-align {
   float: right;
   margin: 0 auto;
+  width: 40%;
 }
 
 
