@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" href="">
-</head>
+<% include ./partials/head.ejs %>
 <body>
   <div class="container">
-    <h1>Homepage 2</h1>
+    <header>
+      <h1>NYC HIKES</h1>
+
+    </header>
+    <div class="main">
+    <h2>Check out NYC's hike trails</h2>
+      <div class="opt-dropdown">
+        <button class="trails-btn">Hike Trails</button>
+        <div class="trails-content">
+
+          <ul id="menu">
+            <li>Bronx
+                <ul class="bronx-locat">
+                  <li>helo</li>
+                  <li>sfn</li>
+                </ul>
+              </li>
+            <li>Manhattan
+                <ul class="manh-locat">
+                  <li> </li>
+                </ul>
+            </li>
+            <li>Brooklyn
+                <ul class="brook-locat"> <li> </li></ul>
+            </li>
+            <li>Queens
+                <ul class="queens-locat"></ul>
+            </li>
+            <li>Staten Island
+                <ul class="si-locat"></ul>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="btm-append"></div>
+    <select id="first-choice">
+  <option selected value="base">Please Select</option>
+</select>
+
+
+
+
+
+
+
   </div>
+  <script src="/js/script.js"></script>
 </body>
 </html>

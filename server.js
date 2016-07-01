@@ -9,7 +9,7 @@ const PORT = process.env.PORT || process.argv[2] || 3000 ;
 
 const homeRoute = require('./routes/home');
 const userRoute = require('./routes/user');
-// const hikeRoute = require('./routes/hike');
+const hikeRoute = require('./routes/hike');
 const session   = require('express-session');
 const methodOverride = require('method-override');
 
@@ -31,11 +31,8 @@ app.use(methodOverride('_method'));
 
 // Setting up the routes
 app.use('/', homeRoute);
-// app.get('/',function(req,res){
-//   res.render('index')
-// })
 // app.use('/user', userRoute);
-// app.use('/hike', hikeRoute);
+app.use('/hike', hikeRoute);
 
 
 

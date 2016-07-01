@@ -1,0 +1,45 @@
+body {
+  background: #ffe;
+}
+
+.opt-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.trails-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.trails-content ol li {
+    /*color: black;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.trails-content ol li:hover {background-color: #f1f1f1}
+
+.opt-dropdown:hover .trails-content {
+    display: block;
+}
+
+.opt-dropdown:hover .trails-btn {
+    background-color: #3e6789;
+}
+
+li ul li {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,5 @@
-{
-    "hiking": {
-        "-xmlns": "http://www.nycgovparks.org/bigapps/desc/DPR_Hiking_001.txt",
-        "facility": [{
+
+    [{
             "Prop_ID": "B057",
             "Name": "Salt Marsh Nature Trail",
             "Location": "Enter behind the Salt Marsh Nature Center, located near the intersection of East 33rd Street and Avenue U.",
@@ -353,5 +351,4 @@
             "Accessible": "N",
             "Limited_Access": "N"
         }]
-    }
-}
+
