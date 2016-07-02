@@ -5,13 +5,15 @@ const app       = express();
 const path      = require('path');
 const logger    = require('morgan');
 const bodyParser= require('body-parser');
-const PORT = process.env.PORT || process.argv[2] || 3000 ;
+const PORT      = process.env.PORT || process.argv[2] || 3000 ;
 
 const homeRoute = require('./routes/home');
 const userRoute = require('./routes/user');
 const hikeRoute = require('./routes/hike');
+// const mapRoute  = require('./routes/map');
 const session   = require('express-session');
 const methodOverride = require('method-override');
+const request   = require('request');
 
 app.use(session({
   saveUninitialized:true,
@@ -33,6 +35,7 @@ app.use(methodOverride('_method'));
 app.use('/', homeRoute);
 // app.use('/user', userRoute);
 app.use('/hike', hikeRoute);
+// app.use('/mapsapi', mapRoute);
 
 
 

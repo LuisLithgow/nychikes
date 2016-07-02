@@ -1,10 +1,15 @@
-body {
+html, body {
+  height: 100%; margin: 0; padding: 0;
   background: #ffe;
+  font-family: 'Roboto', sans-serif !important;
 }
+
 
 .opt-dropdown {
     position: relative;
     display: inline-block;
+    margin: -4px 33%;
+    width: 32%;
 }
 
 .trails-content {
@@ -21,14 +26,15 @@ body {
     display: block;
 }
 
-.trails-content ol li:hover {background-color: #f1f1f1}
+.trails-content ol li:hover {background-color: #4caf50}
 
 .opt-dropdown:hover .trails-content {
     display: block;
 }
 
 .opt-dropdown:hover .trails-btn {
-    background-color: #3e6789;
+    background-color: #4caf50;
+    border-radius: 6px;
 }
 
 li ul li {
@@ -51,11 +57,81 @@ li ul li {
   margin: 0 auto;
   width: 40%;
 }
+ .right-align {
+  margin-left: 10px;
+  margin-top: 30px;
+ }
 
+ .main {
+  margin: 0 auto;
+  width: 50%;
+}
 
+.trails-btn {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 4px;
+  background-color: azure;
+}
 
+header {
+  /*font-family: 'Roboto' !important, sans-serif !important;*/
+  background-color: #4caf50;
+  /*height: 100%;*/
+  width: 100%;
+  margin-top:10px;
+  color:#ffe;
+}
 
+.title {
+  /*margin-left: -15px;*/
+  background-color: #4caf50;
+  width: 100%;
+  padding: 15px;
+  margin-top:-15px;
+  font-weight: 100;
+}
+h2 {
+  font-weight: 600;
+  margin: 3% 10%;
+}
 
+li {
+  font-size: 14px;
+}
+
+/*Google searcheable maps */
+/*STYLES FOR GOOGLE MAPS API*/
+#map {
+  width: 35%;
+  height: 60%;
+  position: absolute;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-left: -24px;
+  /*display: block;*/
+ }
+.controls {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  height: 29px;
+  margin-left: 17px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 60%;
+}
+
+.controls:focus {
+  border-color: #4d90fe;
+}
 
 
 

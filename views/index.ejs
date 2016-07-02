@@ -2,13 +2,12 @@
 <html>
 <% include ./partials/head.ejs %>
 <body>
-  <div class="container">
     <header>
-      <h1>NYC HIKES</h1>
-
+      <h1 class="title">NYC HIKES</h1>
     </header>
+  <div class="container">
     <div class="main">
-    <h2>Check out NYC's hike trails</h2>
+    <h2>Check out NYC's Hike Trails</h2>
       <div class="opt-dropdown">
         <button class="trails-btn">Hike Trails</button>
         <div class="trails-content">
@@ -36,7 +35,11 @@
     </div>
 
     <div class="bttm-main">
-      <div class="left-align"></div>
+      <div class="left-align">
+        <input id="pac-input" class="controls" type="text"
+        placeholder="Enter a location">
+    <div id="map"></div>
+      </div>
       <div class="right-align"></div>
     </div>
 
@@ -47,6 +50,71 @@
 
 
   </div>
+
   <script src="/js/script.js"></script>
+  <script>
+      let map;
+      // This sample uses the Place Autocomplete widget to allow the user to search
+      // for and select a place. The sample then displays an info window containing
+      // the place ID and other information about the place that the user has
+      // selected.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initMap() {
+        let map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.772945, lng: -73.969808},
+          zoom: 10
+        });
+
+        let input = document.getElementById('pac-input');
+
+        let autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
+
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        let infowindow = new google.maps.InfoWindow();
+        let marker = new google.maps.Marker({
+          map: map
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+        autocomplete.addListener('place_changed', function() {
+          infowindow.close();
+          let place = autocomplete.getPlace();
+          if (!place.geometry) {
+            return;
+          }
+
+          if (place.geometry.viewport) {
+            map.fitBounds(place.geometry.viewport);
+          } else {
+            map.setCenter(place.geometry.location);
+            map.setZoom(17);
+          }
+
+          // Set the position of the marker using the place ID and location.
+          marker.setPlace({
+            placeId: place.place_id,
+            location: place.geometry.location
+          });
+          marker.setVisible(true);
+
+          infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+              'Place ID: ' + place.place_id + '<br>' +
+              place.formatted_address);
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAroS6hpdHUVZvquGRvNbjNDlYsqPz6Ghg&callback=initMap&libraries=places">
+    </script>
 </body>
 </html>
