@@ -151,24 +151,10 @@ $(document).ready(function() {
             // console.log($(this).text());
         })
 
-
-
-
       }, fail: function(err) {
         console.log('conncection failed!');
           }
       });
-
-  // $('li').click(function(event) {
-  //   $('#map').show()
-  // });
-
-
-
-
-
-
-
 
 
 

@@ -9,7 +9,7 @@ const jsonParser = bodyParser.json();
 const urlencodeParser = bodyParser.urlencoded({extended: false});
 
 hikeRouter.get('/', hikeDb.searchTrails, (req,res)=> {
-  console.log(res.filteredTrails);
+  // console.log(res.filteredTrails);
   res.json(res.filteredTrails);
   // res.render('index', {trails:res.filteredTrails})
   // res.render('report_new', {lines:res.lines})

@@ -6,7 +6,71 @@
       <h1 class="title">NYC HIKES</h1>
     </header>
   <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="/images/kazimiroff.jpg" alt="kazimiroff" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>The Kazimiroff Trail in the Bronx</h3>
+          <p>The Kazimiroff Nature Trail in Pelham Bay Park includes a stretch of rocky coastline that's reminiscent of what you would expect to see in Maine.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/images/marine-park.jpg" alt="marine-park" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Marine Park in Brooklyn</h3>
+          <p>Located in Salt MArsh Nature Trail in Brooklyn. The Marine Park Nature Trail follows the shore of Gerritsen Creek, which empties into Jamaica Bay. Its second half winds through a prairie of tall grass. </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/inwood.jpg" alt="inwood" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Blue Trail in Inwood Hill Park, Manhattan</h3>
+          <p>The Blue Trail in Inwood Hill Park is indicated by blue markings on the trees. The park is a good place for hikers to see nesting red-tailed hawks and owls, as well as tulip trees.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/images/green-belt.jpg" alt="green-belt" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Green Belt Trail</h3>
+          <p>The Greenbelt on Staten Island boasts over 35 miles of marked hiking trails.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
     <div class="main">
+      <div class="mid-div">
+        <span class="weath-icons"></span>
+        <span class="weath-info"></span>
+      </div>
     <h2>Check out NYC's Hike Trails</h2>
       <div class="opt-dropdown">
         <button class="trails-btn">Hike Trails</button>
@@ -38,7 +102,7 @@
       <div class="left-align">
         <input id="pac-input" class="controls" type="text"
         placeholder="Enter a location">
-    <div id="map"></div>
+        <div id="map"></div>
       </div>
       <div class="right-align"></div>
     </div>
@@ -51,18 +115,10 @@
 
   </div>
 
-  <script src="/js/script.js"></script>
+  <script src="/js/hike.js"></script>
+  <script src="/js/weather.js"></script>
+  <!-- GOOGLE MAPS API -->
   <script>
-      let map;
-      // This sample uses the Place Autocomplete widget to allow the user to search
-      // for and select a place. The sample then displays an info window containing
-      // the place ID and other information about the place that the user has
-      // selected.
-
-      // This example requires the Places library. Include the libraries=places
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
       function initMap() {
         let map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.772945, lng: -73.969808},
@@ -112,8 +168,7 @@
         });
       }
     </script>
-
-  <script async defer
+    <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAroS6hpdHUVZvquGRvNbjNDlYsqPz6Ghg&callback=initMap&libraries=places">
     </script>
 </body>

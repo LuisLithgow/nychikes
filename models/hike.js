@@ -20,7 +20,6 @@ module.exports = {
       .sort({"Park_Name":1, "Name":-1})
       .toArray(function(err, results) {
         if(err) throw err;
-
         res.filteredTrails = results;
         next();
       })

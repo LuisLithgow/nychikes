@@ -9,8 +9,6 @@ const PORT      = process.env.PORT || process.argv[2] || 3000 ;
 
 const homeRoute = require('./routes/home');
 const userRoute = require('./routes/user');
-const hikeRoute = require('./routes/hike');
-// const mapRoute  = require('./routes/map');
 const session   = require('express-session');
 const methodOverride = require('method-override');
 const request   = require('request');
@@ -35,20 +33,10 @@ app.use(methodOverride('_method'));
 app.use('/', homeRoute);
 // app.use('/user', userRoute);
 app.use('/hike', hikeRoute);
-// app.use('/mapsapi', mapRoute);
+// app.use('/weather', weatherRoute);
 
 
 
-
-
-// request
-// app.get('/api', (req,res)=> {
-//   request({url:'http.......format=json'},method:'get', (er,result)=>{
-//     if(err) throw err;
-//     console.log(result);
-//     res.send(result);
-//   })
-// })
 
 app.listen(PORT, function() {
   console.log('Server started in ' ,__dirname);
