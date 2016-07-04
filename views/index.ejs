@@ -12,10 +12,14 @@
           <% } else { %>
             Welcome, Guest
           <% } %>
+          <br>
+          <% if(user){ %>
+           Favorite Trail: <%= user.ftrail %>
+          <% } %>
         <a href="/">Home</a>
         <a href="/user/login">Log In</a>
         <a href="/user/new">Sign Up</a>
-        <a href="#">Contact</a>
+        <a href="http://www.luislithgow.com" target="_blank"><img src="/images/my-icon.ico" alt=""></a>
         <form method="post" action="user/logout?_method=DELETE">
             <input type="submit" value="Logout" class="logout-btn">
         </form>
@@ -126,14 +130,25 @@
       </div>
       <div class="right-align"></div>
     </div>
+    <footer>
+      <div class="top-footer">
+        Check out my other stuff
+        <div class="mid-footer">
+          <span> <a href="http://www.luislithgow.com" target="_blank"><img src="/images/my-icon.ico" alt=""></a> </span>
+          <span><a href="https://github.com/LuisLithgow"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a> </span>
+          <span><a href="https://twitter.com/Git_Crusader"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+        </div>
 
-
-
-
+      </div>
+      <div class="bottom-footer">
+        Copyright.2016.NYC HIKES
+      </div>
+    </footer>
 
 
 
   </div>
+
 
   <script src="/js/hike.js"></script>
   <script src="/js/weather.js"></script>
@@ -198,7 +213,6 @@
         $("#main").css("margin-left", "250px");
         $('body').css("background-color", "rgba(0,0,0,0.4)");
       }
-
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
     function closeNav() {
       $("#mySidenav").css("width", "0");

@@ -36,7 +36,8 @@ function createUser(req, res, next) {
         fname: req.body.fname,
         lname: req.body.lname,
         email: email,
-        passwordDigest: hash
+        passwordDigest: hash,
+        ftrail :req.body.ftrail
       }
       db.collection('users').insertOne(userInfo, function(err, result) {
         if(err) throw err;

@@ -1,16 +1,16 @@
 #NYC Hikes
 
 Welcome to NYC Hikes!!
-This is a website that will allow the user to search up any hiking trails in New York City. (Yes, there are hiking trails in the huge concrete jungle.)
+This is a website that will allow the user to search up any hiking trails in New York City. (Yes, there are hiking trails in this huge concrete jungle.)
 
 ##User Story
 
 - A user can easily choose an option of a hiking trail from a drop down menu.
 - A user will choose which trial he or she chooses. 
-- A Google map will appear below the options on where the hiking trail is located. 
-- Along with the map for directions, a short description of the park, the length of the hike and the difficulty of the hike.
-- A weather section will be easily viewable and will give the user a small message to go out for a nice hike on a beautiful day. If it's rainy or snowy, leave the hike for another day or just be extra careful on the hike.
-- User will also be able to sign up and log in to their accounts and save the the hike trails they've been on.
+- A searcheable Google map will appear below the options on where the hiking trail is located. 
+- Along with the location of the trail(s), a short description of the park, the length of the hike and the difficulty of the hike will also be provided.
+- A weather section will be easily viewable and will supply the user on how the current weather conditions are outside in New York City.
+- The user will also be able to sign up and log in to their accounts and save the the hike trails they've been on.
 
 ##Wireframes
 - homepage

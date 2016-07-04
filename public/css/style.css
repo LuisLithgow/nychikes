@@ -4,7 +4,6 @@ html, body {
   background: #70e1f5; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #70e1f5 , #ffd194); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .opt-dropdown {
@@ -49,6 +48,7 @@ li ul li {
   width: 100%
   color: #4CAF50;
   list-style: none;
+  font-weight: 600;
 }
 
 .ui-menu {
@@ -63,8 +63,6 @@ li ul li {
   margin-left: 10px;
   margin-top: 70px;
 }
-
-
 
  .main {
   margin: 0 auto;
@@ -173,16 +171,16 @@ a li {
 
 /*w3Schools Nav bar*/
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -219,3 +217,48 @@ span {
   background-color: #111;
   border:none;
 }
+
+footer {
+  /*font-family: 'Roboto' !important, sans-serif !important;*/
+  background-color: #ffe;
+  height: 135px;
+  width: 100%;
+  margin-top:500px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color:#4caf50;
+}
+
+footer div {
+  margin:7px 0px;
+}
+
+.bottom-footer {
+  padding-bottom: 10px;
+}
+a img {
+  height:50px;
+  width: 50px;
+  border-radius: 40px;
+}
+
+.login-footer {
+  background-color: #ffe;
+  /*height: 135px;*/
+  width: 100%;
+  margin-top:110px;
+  padding-left: 20px;
+  /*padding-top: 10px;*/
+  color:#4caf50;
+}
+
+.newuser-footer {
+  background-color: #ffe;
+  /*height: 135px;*/
+  width: 100%;
+  margin-top:50px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color:#4caf50;
+}
+

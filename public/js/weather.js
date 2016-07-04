@@ -29,7 +29,14 @@ $(document).ready(function() {
                         .append(state + " ");
               $midDiv.append($weathInfo);
               $btmDiv.append($midDiv);
-            } else if (text === "Sunny") {
+            }else if(text === "Partly Cloudy") {
+              $weathIcons.append(temp + "&#xb0; ")
+                          .append(text + "&#x2601; ");
+              $weathInfo.append(city + ", ")
+                        .append(state + " ");
+              $midDiv.append($weathInfo);
+              $btmDiv.append($midDiv);
+             }else if (text === "Sunny") {
               $weathIcons.append(temp + "&#xb0;")
                           .append(text + "&#x2600;  ");
               $weathInfo.append(city + ", ")
@@ -43,8 +50,14 @@ $(document).ready(function() {
                         .append(state + " ");
               $midDiv.append($weathInfo);
               $btmDiv.append($midDiv);
-            }
-            else {
+            }else if (text === "Mostly Sunny") {
+              $weathIcons.append(temp + "&#xb0;")
+                          .append(text + "&#x2600;  ");
+              $weathInfo.append(city + ", ")
+                        .append(state + " ");
+              $midDiv.append($weathInfo);
+              $btmDiv.append($midDiv);
+            } else {
               $weathInfo.append(temp + "&#xb0; ")
                         .append(city + ", ")
                         .append(state + " ")
