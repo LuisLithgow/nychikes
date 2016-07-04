@@ -4,6 +4,26 @@
 <body>
     <header>
       <h1 class="title">NYC HIKES</h1>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <% if(user){ %>
+           Welcome, <%= user.fname %> <%= user.lname %>
+          <% } else { %>
+            Welcome, Guest
+          <% } %>
+        <a href="/">Home</a>
+        <a href="/user/login">Log In</a>
+        <a href="/user/new">Sign Up</a>
+        <a href="#">Contact</a>
+        <form method="post" action="user/logout?_method=DELETE">
+            <input type="submit" value="Logout" class="logout-btn">
+        </form>
+      </div>
+
+      <span onclick="openNav()" > <i class="fa fa-bars fa-3x" aria-hidden="true"></i> </span>
+
+
     </header>
   <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -170,6 +190,29 @@
     </script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAroS6hpdHUVZvquGRvNbjNDlYsqPz6Ghg&callback=initMap&libraries=places">
+    </script>
+    <!-- JS function to get the navbar working from w3school -->
+    <script>
+      function openNav() {
+        $("#mySidenav").css("width","250px");
+        $("#main").css("margin-left", "250px");
+        $('body').css("background-color", "rgba(0,0,0,0.4)");
+      }
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      $("#mySidenav").css("width", "0");
+      $("#main").css("margin-left", "0");
+      $('body').css("background-color", "white")
+    }
+//     function openNav() {
+//     document.getElementById("mySidenav").style.width = "100%";
+// }
+
+//  Close/hide the sidenav
+// function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+// }
     </script>
 </body>
 </html>

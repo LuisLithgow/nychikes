@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { createUser, loginUser } = require('../models/user');
 
 router.get('/new', function(req,res) {
-  res.render('user/new');
+  res.render('user/new', {user: req.session.user});
 });
 
 router.post('/new', createUser, function(req,res) {
@@ -11,7 +11,7 @@ router.post('/new', createUser, function(req,res) {
 });
 
 router.get('/login', function(req,res) {
-  res.render('user/login');
+  res.render('user/login', {user: req.session.user});
 });
 
 router.post('/login', loginUser,function(req,res) {

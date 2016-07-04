@@ -6,7 +6,7 @@ const router = require('express').Router();
 // });
 
 router.get('/', function(req,res) {
-  res.render('index');
+  res.render('index', {user: req.session.user});
 })
 
 

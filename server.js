@@ -7,6 +7,7 @@ const logger    = require('morgan');
 const bodyParser= require('body-parser');
 const PORT      = process.env.PORT || process.argv[2] || 3000 ;
 
+const hikeRoute = require('./routes/hike')
 const homeRoute = require('./routes/home');
 const userRoute = require('./routes/user');
 const session   = require('express-session');
@@ -31,9 +32,8 @@ app.use(methodOverride('_method'));
 
 // Setting up the routes
 app.use('/', homeRoute);
-// app.use('/user', userRoute);
 app.use('/hike', hikeRoute);
-// app.use('/weather', weatherRoute);
+app.use('/user', userRoute);
 
 
 

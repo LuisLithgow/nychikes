@@ -1,9 +1,11 @@
 html, body {
   height: 100%; margin: 0; padding: 0;
-  background: #ffe;
   font-family: 'Roboto', sans-serif !important;
-}
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #70e1f5 , #ffd194); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
 
 .opt-dropdown {
     position: relative;
@@ -33,7 +35,7 @@ html, body {
 }
 
 .opt-dropdown:hover .trails-btn {
-    background-color: #4caf50;
+    background-color: rgba(255, 255,238, 0.28);
     border-radius: 6px;
 }
 
@@ -41,8 +43,9 @@ li ul li {
   text-decoration: underline;
 }
 .li-color {
-  padding: 5px 5px;
-  background-color:#ffe;
+  padding: 8px 5px;
+  background-color: rgba(255, 255,238, 0.28);
+  border-radius: 5px;
   width: 100%
   color: #4CAF50;
   list-style: none;
@@ -55,12 +58,13 @@ li ul li {
 .right-align {
   float: right;
   margin: 0 auto;
+  margin-right: 10px;
   width: 40%;
-}
- .right-align {
   margin-left: 10px;
-  margin-top: 30px;
- }
+  margin-top: 70px;
+}
+
+
 
  .main {
   margin: 0 auto;
@@ -76,20 +80,20 @@ li ul li {
 
 header {
   /*font-family: 'Roboto' !important, sans-serif !important;*/
-  background-color: #4caf50;
+  background-color: #ffe;
   /*height: 100%;*/
   width: 100%;
   margin-top:10px;
-  color:#ffe;
+  color:#4caf50;
 }
 
 .title {
   /*margin-left: -15px;*/
-  background-color: #4caf50;
+  background-color: #ffe;
   width: 100%;
   padding: 15px;
   margin-top:-15px;
-  font-weight: 100;
+  font-weight: 200;
 }
 h2 {
   font-weight: 600;
@@ -103,10 +107,10 @@ li {
 /*Google searcheable maps */
 /*STYLES FOR GOOGLE MAPS API*/
 #map {
-  width: 35%;
-  height: 60%;
+  width: 40%;
+  height: 70%;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-right: 10px;
   margin-left: 14px;
   /*display: block;*/
@@ -139,10 +143,79 @@ li {
 .weath-icons {
   font-size: 30px;
 }
-
+/*STYLING FOR BOOTSTRAP CAROUSEL*/
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
+}
+.form {
+  text-align: center;
+  margin: 3% 3%;
+  width: 100%;
+}
+form {
+  width: 40%;
+}
 
+nav {
+  /*margin: 2% 20%;*/
+  display: -webkit-box;
+  float: right;
+}
 
+li {
+  list-style: none;
+}
+a li {
+  margin-right: 5px;
+}
+
+/*w3Schools Nav bar*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+.container {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+span {
+  margin-left: 20px;
+}
+
+.logout-btn {
+  background-color: #111;
+  border:none;
+}
