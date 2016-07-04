@@ -10,7 +10,7 @@ This is a website that will allow the user to search up any hiking trails in New
 - A searcheable Google map will appear below the options on where the hiking trail is located. 
 - Along with the location of the trail(s), a short description of the park, the length of the hike and the difficulty of the hike will also be provided.
 - A weather section will be easily viewable and will supply the user on how the current weather conditions are outside in New York City.
-- The user will also be able to sign up and log in to their accounts and save the the hike trails they've been on.
+- The user will also be able to sign up and log in to their accounts and favorite their hiking trail.
 
 ##Wireframes
 - homepage
@@ -19,9 +19,33 @@ This is a website that will allow the user to search up any hiking trails in New
 - trail
 ![](http://i.imgur.com/x3CByXz.png)
 <br>
-##Sources and References
 
+##Sources, References and Built With
+
+    API
 - NYC Open database
-"-xmlns": "http://www.nycgovparks.org/bigapps/desc/DPR_Hiking_001.txt",
+"-xmlns": "http://www.nycgovparks.org/bigapps/desc/DPR_Hiking_001.txt"
 - Google Maps API
 - Yahoo Weather API
+
+    Frameworks, Libraries, & etc. used
+-Node.JS 
+-AJAX
+-MOngoDB
+-JQuery
+-Bootstrap.CSS, Bootstrap.JS
+-Jquery UI
+-Fontawesome
+
+    Information obtained
+-W3Schools for the header nav bar
+- DNAInfo.com for their nyc hiking images and information
+    "https://www.dnainfo.com/new-york/20140718/inwood/5-best-places-for-you-hike-new-york-city"
+
+Please refer to my package.json for any NPM's I installed.
+
+
+
+
+
+
