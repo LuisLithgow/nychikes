@@ -1,5 +1,8 @@
 {
   "name": "nychikes",
+  "engines": {
+      "node": "6.2.1"
+    },
   "version": "1.0.0",
   "description": "NYC Hikes",
   "main": "server.js",
