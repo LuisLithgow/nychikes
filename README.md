@@ -45,7 +45,8 @@ This is a website that will allow the user to search up any hiking trails in New
 Please refer to my package.json for any NPM's I installed.
 
 
-
+Check out the site below, hosted on Heroku
+https://dazzling-lassen-volcanic-32152.herokuapp.com/
 
 
 
