@@ -19,7 +19,9 @@ This is a website that will allow the user to search up any hiking trails in New
 - trail
 ![](http://i.imgur.com/x3CByXz.png)
 <br>
-
+##Flow Chart
+![](http://i.imgur.com/XZ82FfL.png)
+<br>
 ##Sources, References and Built With
 
     API
@@ -31,9 +33,9 @@ This is a website that will allow the user to search up any hiking trails in New
     Frameworks, Libraries, & etc. used
 -Node.JS 
 -AJAX
--MOngoDB
+-MongoDB
+-Bootstrap
 -JQuery
--Bootstrap.CSS, Bootstrap.JS
 -Jquery UI
 -Fontawesome
 
@@ -45,7 +47,8 @@ This is a website that will allow the user to search up any hiking trails in New
 Please refer to my package.json for any NPM's I installed.
 
 
-
+Check out the site below, hosted on Heroku
+https://dazzling-lassen-volcanic-32152.herokuapp.com/
 
 
 
