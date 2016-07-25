@@ -13,6 +13,7 @@ const userRoute = require('./routes/user');
 const session   = require('express-session');
 const methodOverride = require('method-override');
 const request   = require('request');
+const GMapsApiKey = process.env.GOOGLEMAPS_API
 
 app.use(session({
   saveUninitialized:true,

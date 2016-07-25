@@ -3,7 +3,8 @@
 
 // es6 decconstrucrs
 const {MongoClient} = require('mongodb');
-const dbConnection = 'mongodb://localhost:27017/nychikes';
+// const dbConnection = 'mongodb://localhost:27017/nychikes';
+const dbConnection   = process.env['MONGODB_URI'] || 'mongodb://localhost:27017/nychikes'
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const urlencodeParser = bodyParser.urlencoded({extended: false});

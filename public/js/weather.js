@@ -1,10 +1,10 @@
 $(document).ready(function() {
   // SETTING GEOLACTION
-  const setLocation = function({coords:{latitude,longitude},timestamp}){
-      loc = {latitude,longitude,timestamp}
-      }
-        // if the navigator is available, watch our position
-         navigator.geolocation && navigator.geolocation.watchPosition && navigator.geolocation.watchPosition( setLocation );
+  // const setLocation = function({coords:{latitude,longitude},timestamp}){
+  //     loc = {latitude,longitude,timestamp}
+  //     }
+  //       // if the navigator is available, watch our position
+  //        navigator.geolocation && navigator.geolocation.watchPosition && navigator.geolocation.watchPosition( setLocation );
 
   $.ajax({
       url: "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%3D2459115&format=json&diagnostics=true&callback=",
