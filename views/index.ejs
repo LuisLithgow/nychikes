@@ -204,7 +204,7 @@
       }
     </script>
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAroS6hpdHUVZvquGRvNbjNDlYsqPz6Ghg&callback=initMap&libraries=places">
+      src=<%= "https://maps.googleapis.com/maps/api/js?key="  + process.env.GOOGLEMAPS_API + "&callback=initMap&libraries=places" %> >
     </script>
     <!-- JS function to get the navbar working from w3school -->
     <script>
